@@ -1,0 +1,96 @@
+.posts {
+
+	width: 90%;
+	margin: 0 auto 100px;
+
+	.post {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 150px;
+
+		@media screen and (max-width: 1200px) {
+			margin-bottom: 120px;
+		}
+
+		@media screen and (max-width: 990px) {
+			margin-bottom: 100px;
+		}
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 70px;
+		}
+
+		@media screen and (max-width: 576px) {
+			margin-bottom: 50px;
+		}
+
+		@media screen and (max-width: 376px) {
+			margin-bottom: 30px;
+		}
+
+		&__title {
+			width: 100%;
+			font-size: 57px;
+			font-weight: 900;
+			margin-bottom: 40px;
+
+			@media screen and (max-width: 768px) {
+				font-size: 45px;
+				margin-bottom: 30px;
+			}
+
+			@media screen and (max-width: 576px) {
+				font-size: 40px;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__image-container {
+			width: 48%;
+
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+
+		&__image {
+			width: 100%;
+			min-height: 500px;
+			object-fit: cover;
+			object-position: center;
+
+			@media screen and (max-width: 576px) {
+				min-height: 350px;
+			}
+		}
+
+		&__text {
+			width: 50%;
+			font-size: 18px;
+			line-height: 30px;
+			padding-top: 20px;
+			padding-left: 20px;
+
+			@media screen and (max-width: 1200px) {
+				width: 100%;
+				padding-left: 0;
+			}
+
+			@media screen and (max-width: 576px) {
+				font-size: 17px;
+				line-height: 27px;
+			}
+
+			@media screen and (max-width: 376px) {
+				font-size: 16px;
+				line-height: 25px;
+			}
+
+			p {
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
