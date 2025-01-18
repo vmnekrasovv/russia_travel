@@ -1,7 +1,7 @@
 (function($){
 	$(document).ready(function(){ 
 
-		/*$('.scroll-down').on('click', function(){
+		$('.scroll-down').on('click', function(){
 			$('html, body').animate({
 				scrollTop: $('.navbar').offset().top
 			}, 500, function(){ 
@@ -20,10 +20,10 @@
 		});
 
 
-		$('.header').parallax({
-			imageSrc: 'images/dest/header_bg.jpg',
+		$('.header__image').parallax({
+			imageSrc: 'images/dest/header.jpg',
 			speed: .7,
-		});*/
+		});
 
 		Fancybox.bind("[data-fancybox]", {
   		// Your custom options

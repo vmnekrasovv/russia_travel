@@ -28,15 +28,6 @@ a { text-decoration: none; color: #fff;}
 @import 'scrollbar';
 @import 'fonts';
 
-/* :root {
-	--index: calc(1vw + 1vh);
-} */
-
-/* .content {
-	will-change: transform;
-} */
-
-
 @import 'fancybox.css';
 
 .page {
@@ -48,17 +39,27 @@ a { text-decoration: none; color: #fff;}
 	font-family: 'Inter';
 	color: #fff;
 
+	@media (max-width: 576px) {
+		padding: 5px 15px 20px;
+	}
+
 	@media screen and (min-width: 990px) {
-		max-width: 90%;
+		max-width: 90vw;
 	}
 
 	@media screen and (min-width: 1400px) {
-		max-width: 80%;
+		max-width: 80vw;
 	}
 
 }
 
+.parallax-mirror {
+	z-index: 1!important;
+}
+
 @import 'header/header';
+
+@import 'intro';
 
 @import 'gallery';
 
