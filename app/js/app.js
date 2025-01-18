@@ -1,3 +1,9 @@
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+ScrollSmoother.create({
+	wrapper: '.wrapper',
+	content: '.box'
+});
+
 (function($){
 	$(document).ready(function(){ 
 
@@ -20,10 +26,10 @@
 		});
 
 
-		$('.header__image').parallax({
-			imageSrc: 'images/dest/header.jpg',
-			speed: .7,
-		});
+		// $('.header__image').parallax({
+		// 	imageSrc: 'images/dest/header.jpg',
+		// 	speed: .7,
+		// });
 
 		Fancybox.bind("[data-fancybox]", {
   		// Your custom options
@@ -38,5 +44,7 @@
 			gallery__item.height(gallery__item_height);
 		});
 		
+
+
 	});
 })(jQuery);
