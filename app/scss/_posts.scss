@@ -1,7 +1,10 @@
 .posts {
 
-	width: 90%;
 	margin: 0 auto 100px;
+
+	@media (min-width: 769px) {
+		width: 90%;
+	}
 
 	.post {
 
@@ -60,6 +63,10 @@
 			@media screen and (max-width: 1200px) {
 				width: 100%;
 				margin-bottom: 30px;
+			}
+
+			@media (max-width: 768px) {
+				margin-bottom: 0;
 			}
 		}
 
